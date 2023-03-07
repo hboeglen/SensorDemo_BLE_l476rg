@@ -1,3 +1,0 @@
-/home/herve/Documents/stm32_projects/SensorDemo_BLE_l476rg/Src/i2c.c:30:6:MX_I2C1_Init	8	static
-/home/herve/Documents/stm32_projects/SensorDemo_BLE_l476rg/Src/i2c.c:73:6:HAL_I2C_MspInit	184	static
-/home/herve/Documents/stm32_projects/SensorDemo_BLE_l476rg/Src/i2c.c:113:6:HAL_I2C_MspDeInit	16	static
