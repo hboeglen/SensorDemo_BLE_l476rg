@@ -259,8 +259,8 @@ void Read_Request_CB(uint16_t handle)
   else if (handle == EnvironmentalCharHandle + 1)
   {
     float data_t, data_p;
-    data_t = 20.0;//27.0 + ((uint64_t)rand()*5)/RAND_MAX; //T sensor emulation
-    data_p = 1000.0; // + ((uint64_t)rand()*100)/RAND_MAX; //P sensor emulation
+    data_t = 27.0 + ((uint64_t)rand()*5)/RAND_MAX; //T sensor emulation
+    data_p = 1000.0 + ((uint64_t)rand()*100)/RAND_MAX; //P sensor emulation
     Environmental_Update((int32_t)(data_p *100), (int16_t)(data_t * 10));
   }
 

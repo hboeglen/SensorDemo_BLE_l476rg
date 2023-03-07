@@ -339,7 +339,6 @@ static void User_Process(void)
 
       /* Update emulated Environmental data */
       Set_Random_Environmental_Values(&data_t, &data_p);
-      PRINT_DBG("Temperature: %6.2f Pressure: %6.2f\r\n", data_t, data_p);
       Environmental_Update((int32_t)(data_p *100), (int16_t)(data_t * 10));
 
       /* Update emulated Acceleration, Gyroscope and Sensor Fusion data */
@@ -372,8 +371,8 @@ static void User_Process(void)
  */
 static void Set_Random_Environmental_Values(float *data_t, float *data_p)
 {
-  *data_t = 20.0;// + ((uint64_t)rand()*5)/RAND_MAX;     /* T sensor emulation */
-  *data_p = 1000.0; //+ ((uint64_t)rand()*80)/RAND_MAX; /* P sensor emulation */
+  *data_t = 20.0 + ((uint64_t)rand()*5)/RAND_MAX;     /* T sensor emulation */
+  *data_p = 1000.0 + ((uint64_t)rand()*80)/RAND_MAX; /* P sensor emulation */
 }
 
 /**
